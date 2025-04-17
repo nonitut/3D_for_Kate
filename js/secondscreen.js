@@ -41,7 +41,7 @@ export function initThirdScreen() {
     // Загрузка модели для третьей сцены (камни или сердце)
     const loader = new GLTFLoader();
     loader.load(
-        '../models/heart.gltf', // или 'models/heart.gltf'
+        'models/heart.gltf', // или 'models/heart.gltf'
         (gltf) => {
             const model = gltf.scene;
             model.scale.set(2, 2, 2);
