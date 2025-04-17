@@ -145,6 +145,7 @@ footer{
     width: 500vw;
     margin-left: -10vw;
     z-index: -1; 
+    pointer-events: none;
 }
 
 
