@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flows.ru</title>
+  <link rel="icon" href="./pictures/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/",
+        "cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js",
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/loaders/FontLoader.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="./pictures/logo.svg" alt="logo" class="logo" />
+    <div class="headroad">
+      <p class="button0">Главная</p>
+      <div class="dropdown">
+        <a href="#" class="droplink">Разделы</a>
+        <div class="dropdowncontent none">
+          <a href="#" class="button1">Мозайки</a>
+          <a href="#" class="button2">Капсулы</a>
+          <a href="#" class="button3">Сонник</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <!-- <section class="screen screen0 active">
+    <canvas id="canvas1"></canvas>
+    <p class="maintext">Feelings Matter</p>
+  </section>  -->
+
+<!-- вторая секция -->
+<section class="screen screen1">
+  <div class="section section1">
+    <div class="puzzlecont" data-image="./pictures/1.jpg" data-solved="false"></div>
+  </div>
+  <div class="section section2">
+    <div class="puzzlecont" data-image="./pictures/2.jpg" data-solved="false"></div>
+  </div>
+  <div class="section section3">
+    <div class="puzzlecont" data-image="./pictures/3.jpg" data-solved="false"></div>
+  </div>
+  <div class="arttext">
+    <p id="arttext"></p>
+  </div>
+  <p class="text history"></p>
+  <div class="bottomfirst">
+    <p class="text dop1">*История размещена с согласия клиента</p>
+    <p class="text dop2">Для связи с клиникой нажмите здесь</p>
+  </div>
+  <button class="next">
+    <img src="./pictures/cnhtkjxrf.svg" alt="swapright" class="right" />
+  </button>
+</section>
+
+<!-- третий экран -->
+<section class="screen screen2">
+  <canvas id="canvas2"></canvas>
+  <p class="pupa">Gardens of the Soul</p>
+</section>
+
+<!-- четвёртый экран -->
+<section class="screen screen3">
+  <canvas id="canvas3"></canvas>
+  <p class="textaboutheart">камни на сердце</p>
+</section>
+
+<footer></footer>
+
+  <script type="module" src="./js/light3dmodel.js"></script>
+  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/secondscreen.js"></script>
+  <script type="module" src="./js/thirdscreen3d.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
